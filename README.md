@@ -35,7 +35,37 @@ Name: Double inverted pendulum stabilization around equilibrim point
 
 • $g=9.81$ – gravitational constant
 
-**Define it in this block of code**:
+**Equation of motion**
+
+After linearization we get (check "notes.pdf")
+
+```math
+\left(\begin{array}{ccc}
+\left(M+m_{1}+m_{2}\right) & \left(m_{1}l_{1}+m_{2}L_{1}\right) & m_{2}l_{2}\\
+\left(m_{1}l_{1}+m_{2}L_{1}\right) & \left(m_{1}l_{1}^{2}+m_{2}L_{1}^{2}+I_{1}\right) & m_{2}l_{2}L_{1}\\
+m_{2}l_{2} & m_{2}L_{1}l_{2} & \left(m_{2}l_{2}^{2}+I_{2}\right)
+\end{array}\right)\left(\begin{array}{c}
+\ddot{x}\\
+\ddot{\theta}_{1}\\
+\ddot{\theta}_{2}
+\end{array}\right)+\left(\begin{array}{ccc}
+0 & 0 & 0\\
+0 & -g\left(m_{1}l_{1}+m_{2}L_{1}\right) & 0\\
+0 & 0 & -gm_{2}l_{2}
+\end{array}\right)\left(\begin{array}{c}
+x\\
+\theta_{1}\\
+\theta_{2}
+\end{array}\right)=\left(\begin{array}{c}
+F\\
+0\\
+0
+\end{array}\right)
+
+```
+
+
+**Define parameters in this block of code**:
 
 ```python
 M=2
