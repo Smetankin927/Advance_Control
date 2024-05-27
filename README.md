@@ -25,13 +25,13 @@ System parameters:
 
 • $I_{i}=\frac{1}{3}mL_{i}^{2}$ – inertia moment
 
-• \theta_{1},\theta_{2}– angles of deviation from vertical of the lower and upper pendulum, respectively (state variables)
+• $\theta_{1}$ , $\theta_{2}$ – angles of deviation from vertical of the lower and upper pendulum, respectively (state variables)
 
-• M – mass of cartpole
+• $M$ – mass of cartpole
 
-• x – position of cartpole (state vatiable)
+• $x$ – position of cartpole (state vatiable)
 
-• F – applied force (control variable)
+• $F$ – applied force (control variable)
 
-• g=9.81 – gravitational constant
-$
+• $g=9.81$ – gravitational constant
+
