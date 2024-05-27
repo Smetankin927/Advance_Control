@@ -18,7 +18,7 @@ Name: Double inverted pendulum stabilization around equilibrim point
 </p>
 
 System parameters:
-$$
+$
 • L_{1},L_{2}-lenghts of bottom and top pendulum l_{i}=\frac{L_{i}}{2}
 
 • m_{1},m_{2}– masses of the lower and upper pendulum, respectively
@@ -34,4 +34,4 @@ $$
 • F – applied force (control variable)
 
 • g=9.81 – gravitational constant
-$$
+$
