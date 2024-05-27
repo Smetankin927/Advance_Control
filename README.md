@@ -35,3 +35,12 @@ System parameters:
 
 • $g=9.81$ – gravitational constant
 
+Define it in this block of code:
+
+` ``r
+norm <- function(x) {
+  sqrt(x%*%x)
+}
+norm(1:4)
+` ``
+
