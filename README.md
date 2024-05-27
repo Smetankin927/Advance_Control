@@ -39,6 +39,7 @@ Name: Double inverted pendulum stabilization around equilibrim point
 
 After linearization we get (check "notes.pdf")
 
+
 ```math
 \left(\begin{array}{ccc}
 \left(M+m_{1}+m_{2}\right) & \left(m_{1}l_{1}+m_{2}L_{1}\right) & m_{2}l_{2}\\
@@ -62,6 +63,47 @@ F\\
 0
 \end{array}\right)
 
+```
+**Control Design**:
+
+In the state space our equations transforms to
+
+```math
+\dot{X}=AX+BU
+
+A=M^{-1}N,\,\,\,\,B=M^{-1}F
+
+M=\left(\begin{array}{cccccc}
+1 & 0 & 0 & 0 & 0 & 0\\
+0 & 1 & 0 & 0 & 0 & 0\\
+0 & 0 & 1 & 0 & 0 & 0\\
+0 & 0 & 0 & \left(M+m_{1}+m_{2}\right) & \left(m_{1}l_{1}+m_{2}L_{1}\right) & m_{2}l_{2}\\
+0 & 0 & 0 & \left(m_{1}l_{1}+m_{2}L_{1}\right) & \left(m_{1}l_{1}^{2}+m_{2}L_{1}^{2}+I_{1}\right) & m_{2}l_{2}L_{1}\\
+0 & 0 & 0 & m_{2}l_{2} & m_{2}L_{1}l_{2} & \left(m_{2}l_{2}^{2}+I_{2}\right)
+\end{array}\right)
+
+N=\left(\begin{array}{cccccc}
+0 & 0 & 0 & 1 & 0 & 0\\
+0 & 0 & 0 & 0 & 1 & 0\\
+0 & 0 & 0 & 0 & 0 & 1\\
+0 & 0 & 0 & 0 & 0 & 0\\
+0 & -g\left(m_{1}l_{1}+m_{2}L_{1}\right) & 0 & 0 & 0 & 0\\
+0 & 0 & -gm_{2}l_{2} & 0 & 0 & 0
+\end{array}\right),\,\,\,F=\left(\begin{array}{c}
+0\\
+0\\
+0\\
+1\\
+0\\
+0
+\end{array}\right),\,\,\,X=\left(\begin{array}{c}
+x\\
+\theta_{1}\\
+\theta_{2}\\
+\dot{x}\\
+\dot{\theta}_{1}\\
+\dot{\theta}_{2}
+\end{array}\right)
 ```
 
 
