@@ -8,7 +8,7 @@ Code in this repository based on [Regelum](https://regelum.aidynamic.io/) framew
 2. Run .ipynb file
 
 ## Project Description
-Name: Double inverted pendulum stabilization around equilibrim point 
+**Name**: Double inverted pendulum stabilization around equilibrim point 
 ```math
  \theta_1 = \theta_2 = 0
 ```
@@ -16,6 +16,9 @@ Name: Double inverted pendulum stabilization around equilibrim point
 <p align="center">
   <img src="https://github.com/Smetankin927/Advance_Control/blob/main/pendulum.png">
 </p>
+
+**Approach**:
+In this code we linearized equation of motion and apply LQR control
 
 **System parameters**:
 
