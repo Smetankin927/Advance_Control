@@ -37,10 +37,14 @@ System parameters:
 
 Define it in this block of code:
 
-` ``r
-norm <- function(x) {
-  sqrt(x%*%x)
-}
-norm(1:4)
-` ``
+```python
+M=2
+m1=1
+m2=1.25
+L1=0.4
+L2=0.6
+I1=0.0014
+I2=0.0375
+g=9.8
+```
 
