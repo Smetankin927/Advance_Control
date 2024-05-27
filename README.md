@@ -19,11 +19,11 @@ Name: Double inverted pendulum stabilization around equilibrim point
 
 System parameters:
 
-•$L_{1},L_{2}$-lenghts of bottom and top pendulum $l_{i}=\frac{L_{i}}{2}$
+•$L_{1}$,$L_{2}$-lenghts of bottom and top pendulum $l_{i}=\frac{L_{i}}{2}$
 
-• m_{1},m_{2}– masses of the lower and upper pendulum, respectively
+• $m_{1}$,$m_{2}$– masses of the lower and upper pendulum, respectively
 
-• I_{i}=\frac{1}{3}mL_{i}^{2} – inertia moment
+• $I_{i}=\frac{1}{3}mL_{i}^{2}$ – inertia moment
 
 • \theta_{1},\theta_{2}– angles of deviation from vertical of the lower and upper pendulum, respectively (state variables)
 
