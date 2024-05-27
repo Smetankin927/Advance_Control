@@ -3,6 +3,10 @@ Repository for final project in Advance control system course 2024
 
 Code in this repository based on [Regelum](https://regelum.aidynamic.io/) framework
 
+## How to use
+1. Read "notes.pdf"
+2. Run .ipynb file
+
 ## Project Description
 Name: Double inverted pendulum stabilization around equilibrim point 
 ```math
