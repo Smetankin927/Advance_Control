@@ -150,3 +150,9 @@ simulator = CasADi(
 )
 ```
 
+**Results**:
+We can see that our control stabilize the system
+
+<p align="center">
+  <img src="https://github.com/Smetankin927/Advance_Control/blob/main/res_of_simulation.png">
+</p>
