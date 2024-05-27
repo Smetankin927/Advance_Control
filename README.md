@@ -70,9 +70,11 @@ In the state space our equations transforms to
 
 ```math
 \dot{X}=AX+BU
-
+```
+```math
 A=M^{-1}N,\,\,\,\,B=M^{-1}F
-
+```
+```math
 M=\left(\begin{array}{cccccc}
 1 & 0 & 0 & 0 & 0 & 0\\
 0 & 1 & 0 & 0 & 0 & 0\\
@@ -81,7 +83,8 @@ M=\left(\begin{array}{cccccc}
 0 & 0 & 0 & \left(m_{1}l_{1}+m_{2}L_{1}\right) & \left(m_{1}l_{1}^{2}+m_{2}L_{1}^{2}+I_{1}\right) & m_{2}l_{2}L_{1}\\
 0 & 0 & 0 & m_{2}l_{2} & m_{2}L_{1}l_{2} & \left(m_{2}l_{2}^{2}+I_{2}\right)
 \end{array}\right)
-
+```
+```math
 N=\left(\begin{array}{cccccc}
 0 & 0 & 0 & 1 & 0 & 0\\
 0 & 0 & 0 & 0 & 1 & 0\\
