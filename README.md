@@ -14,6 +14,6 @@ Name: Double inverted pendulum stabilization around equilibrim point
 ```
 
 <p align="center">
-  <img src="[https://picsum.photos/460/300](https://github.com/Smetankin927/Advance_Control/blob/main/pendulum.png)">
+  <img src="https://github.com/Smetankin927/Advance_Control/blob/main/pendulum.png">
 </p>
 
