@@ -17,7 +17,7 @@ Name: Double inverted pendulum stabilization around equilibrim point
   <img src="https://github.com/Smetankin927/Advance_Control/blob/main/pendulum.png">
 </p>
 
-System parameters:
+**System parameters**:
 
 • $L_{1}$ , $L_{2}$ -lenghts of bottom and top pendulum $l_{i}=\frac{L_{i}}{2}$
 
@@ -35,7 +35,7 @@ System parameters:
 
 • $g=9.81$ – gravitational constant
 
-Define it in this block of code:
+**Define it in this block of code**:
 
 ```python
 M=2
@@ -46,5 +46,13 @@ L2=0.6
 I1=0.0014
 I2=0.0375
 g=9.8
+```
+
+**Set initial conditions**
+```python
+simulator = CasADi(
+    system=DoubleInvertPendulumLinear(),
+    state_init= np.array([[1., 0, 0,0,0.1,0.1]]), ## INITIAL CONDITIONS [x, theta1, theta2, x_dot, theta1_dot, theta2_dot]
+)
 ```
 
