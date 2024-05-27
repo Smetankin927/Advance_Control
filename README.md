@@ -109,6 +109,22 @@ x\\
 \end{array}\right)
 ```
 
+use LQR control
+
+```math
+J=\int xQx+uRu
+```
+```math
+Q=E,\,\,E-6\times6\,\,identity\,\,matrix
+```
+
+```math
+R=1
+```
+```math
+u=-KX
+```
+
 
 **Define parameters in this block of code**:
 
